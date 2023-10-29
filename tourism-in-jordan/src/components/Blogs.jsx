@@ -33,7 +33,7 @@ const Blogs = () => {
           <img src={`https://via.placeholder.com/150`} alt={blog.title} className="w-full h-32 object-cover mb-4 rounded-md" />
           <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
           <p className="text-blue-950 mb-4">{blog.body}</p>
-          <Link to={`/blogs/${blog.id}`} className="text-blue-950 hover:underline">
+          <Link to={`/blog/${blog.id}`} className="text-blue-950 hover:underline">
             More Details
           </Link>
         </div>

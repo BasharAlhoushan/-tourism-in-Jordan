@@ -11,6 +11,7 @@ const BlogDetails = () => {
       try {
         const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
         setBlog(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
